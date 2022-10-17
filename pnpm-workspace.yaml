@@ -1,0 +1,6 @@
+packages:
+  - 'dev/**'
+  - 'packages/**'
+  - 'models/**'
+  - 'scripts/**'
+  - 'docs/**'

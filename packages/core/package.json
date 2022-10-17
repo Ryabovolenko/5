@@ -1,0 +1,20 @@
+{
+  "name": "@upscalerjs/core",
+  "version": "1.0.0-beta.6",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    ".npmrc",
+    "LICENSE",
+    "dist/**/*"
+  ],
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js src --ext .ts",
+    "prepublishOnly": "pnpm lint && pnpm build && pnpm validate:build",
+    "validate:build": "ts-node ../../scripts/package-scripts/validate-build.ts packages/core",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-core": "^4.0.0"
+  }
+}

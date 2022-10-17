@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "strict": true,
+  }
+}
